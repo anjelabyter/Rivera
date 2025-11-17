@@ -1,0 +1,52 @@
+ 1  ls
+    2  cd documents
+    3  cd ..
+    4  cd documents
+    5  -al
+    6  - al
+    7  ls - al
+    8  ls -al
+    9  mkdir Rivera
+   10  cd Rivera
+   11  ls
+   12  touch test.txt
+   13  ls test.txt
+   14  touch readme.md
+   15  ls
+   16  start readme.md
+   17  git config --global user.name "anjelabyter"
+   18  git config --global user.name
+   19  git config --global user.email "anjelavenice.rivera24@gmail.com"
+   20  git config --global user.email
+   21  git init
+   22  ls - al
+   23  ls -al
+   24  cd .git
+   25  tree -a
+   26  cd ..
+   27  git status
+   28  git add .
+   29  git status
+   30  git commit -m "hello"
+   31  git branch -M main
+   32  git remote add origin https://github.com/anjelabyter/Rivera.git
+   33  git push -u origin main
+   34  start readme.md
+   35  git add .
+   36  git status
+   37  git commit -m
+   38  git commit -m "second commit"
+   39   start readme. md
+   40  start readme.md
+   41  git status
+   42  git add .
+   43  git status
+   44  git commit -m
+   45  git commit -m " second commit "
+   46  git push
+   47  cd ..
+   48  git clone https://github.com/anjelabyter/Rivera.git
+   49  cd rivera
+   50  touch
+   51  touch history.txt
+   52  history
