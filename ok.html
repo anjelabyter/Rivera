@@ -3,76 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anjela Venice Rivera's E-Portfolio</title>
+    <link rel="stylesheet" href="ih.css">
 </head>
 <body>
-    <section class="bg-red fc-white">
-    <form action="" method="">
-        <h1>LOGIN FORM</h1>
-        <label for="username">Username:</label><br>
-        <input type="text" name="username" id="username" maxlength="20"><br>
-        <label for="password">Password:</label><br>
-        <input type="text" name="password" id="password" maxlength="20">
-        <br><br>
-        <input type="button" name="login" id="login" value="Submit" onclick="validate()">
-        <!--<button name="login" id="login">Submit</button>-->
-    </form>
-</section>
+    <header id="top">
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="intro">
+            <div class="intro">
+                <img src="img/GOOD.jpg" alt="Profile Photo" class="profile-img">
+                <h1 id="typing" class="welcome"></h1>
+                <h1>I AM ANJELA VENICE RIVERA</h1>
+                <h2 class="note">CS211 APPLICATION DEVELOPMENT</h2>
+                <p class="note">Explore my projects and lessons below.</p>
+            </div>
+        </section>
 
-    <section class="bg-red fc-white">
-        <form action="">
-            <h1>Registration</h1>
-            <label for="">Fullname:</label><br>
-            <input type="text" name="fullname" id="fullname" placeholder="Fullname"><br>
-            <label for="">E-mail</label><br>
-            <input type="email" name="email" id="email" placeholder="example@gmail.com">
-            <br><br>
-            <label for="">Gender</label><br>
-            <input type="radio" name="gender" id="gender" value="male" checked>Male
-            <input type="radio" name="gender" id="gender" value="female">Female
-            <br><br>
-            <label for="">Music Services</label><br>
-            <input type="checkbox" name="service" id="service" value="Spotify" checked> Spotify
-            <input type="checkbox" name="service" id="service" value="Apple" checked> Apple
-            <input type="checkbox" name="service" id="service" value="Itunes" checked> Itunes
-            <br><br>
-            <label for="">Genre</label><br>
-            <select name="Genre" id="Genre">
-                <option value="">--Select Genre--</option>
-                <option value="Kpop">Kpop</option>
-                <option value="Rock">Rock</option>
-                <option value="Jazz">Jazz</option>
-            </select>
-            <br><br>
-            <input type="button" name="Registration" id="Registration" value="Submit" onclick="registration()">
-        </form>
-    </section>
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61777.358834821!2d120.93539714813232!3d14.594236327274983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca16780c9ebd%3A0xcd430ec6788bb043!2sFort%20Santiago!5e0!3m2!1sen!2sph!4v1757328534253!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</html>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a Computer Science student at the University of Northern Philippines, specializing in Application Development. Passionate about web technologies and creating interactive user experiences.</p>
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Responsive Design</li>
+                    <li>UI/UX Principles</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
-<script>
-    function validate(){
-        var username = document.getElementById('username');
-        var password = document.getElementById('password');
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="card">
+                <img src="img/una.jpg" alt="Lesson 1 Thumbnail" class="card-img">
+                <h3>📚 Lesson 1</h3>
+                <p>HTML Basics: Headers, Lists, Tables, Images</p>
+                <a href="Lesson1.html">View Lesson</a>
+            </div>
+            <div class="card">
+                <img src="img/dalawa.jpg" alt="Lesson 2 Thumbnail" class="card-img">
+                <h3>🖥️ Lesson 2</h3>
+                <p>Forms and JavaScript: Login, Registration, Maps</p>
+                <a href="lesson2.html">View Lesson</a>
+            </div>
+            <div class="card">
+                <img src="img/RESUMEME.jpg" alt="Resume Thumbnail" class="card-img">
+                <h3>📋 Resume 2</h3>
+                <p>Another Version of My Resume</p>
+                <a href="resume2.html">View Resume</a>
+            </div>
+            <div class="card">
+                <img src="img/apat.jpg" alt="Gallery Thumbnail" class="card-img">
+                <h3>🖼️ Gallery</h3>
+                <p>Image Gallery Showcase</p>
+                <a href="Gallery.html">View Gallery</a>
+            </div>
+            <div class="card">
+                <img src="img/lima.jpg" alt="Schedule Thumbnail" class="card-img">
+                <h3>📅 Schedule</h3>
+                <p>My Personal Schedule</p>
+                <a href="Schedule.html">View Schedule</a>
+            </div>
+            <div class="card">
+                <img src="img/new.jpg" alt="Contact Thumbnail" class="card-img">
+                <h3>📞 Contact</h3>
+                <p>Get in Touch with Me</p>
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="card">
+                <img src="img/zy.jpg" alt="Multimedia Thumbnail" class="card-img">
+                <h3>🎥 Multimedia</h3>
+                <p>Multimedia Content and Videos</p>
+                <a href="Multimedia.html">View Multimedia</a>
+            </div>
+            <div class="card">
+                <img src="img/white.jpg" alt="Email Thumbnail" class="card-img">
+                <h3>✉️ Mail To</h3>
+                <p>Send Me an Email Directly</p>
+                <a href="mailto:anjelavenice.rivera@gmail.com">Email Me</a>
+            </div>
+        </section>
+    </main>
 
-        if(username.value === 'anjela' && password.value === 'venice'){
-        alert("Welcome! \n Username: " + username.value + " \n Password: " + password.value);
-        window.location.href='home.html';
-    } else {
-        alert("Invalid username and password! Please try again");
+    <footer>
+        <a href="#top" class="back-to-top">Back to Top</a>
+        <div class="social-links">
+            <a href="https://www.facebook.com/elavenicez/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ela_benice?igsh=YW5ydjluaGwxMWk0" target="_blank">Instagram</a>
+            <a href="mailto:anjelavenice.rivera@gmail.com">Email</a>
+        </div>
+        <p>&copy; 2025 Anjela Venice Rivera. </p>
+    </footer>
+
+    <script>
+        // Typing animation
+        const text = "Welcome to My E-Portfolio";
+        const typingElement = document.getElementById('typing');
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typingElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
         }
-    }
-        function registration(){
-            var fullname = document.getElementById("fullname");
-            var email = document.getElementById("email");
-            var gender = document.querySelector('input[name="gender"]:checked');
-            var service = document.querySelectorAll('input[type="checkbox"]:checked');
-            var genre = document.querySelector('select[name="Genre"]');
-            const checkedValues = Array.from(service).map(checkbox => checkbox.value);
-            const joinValues = checkedValues.join(", ");
+        window.onload = typeWriter;
 
-            alert("Information: \n Fullname: " + fullname.value + "\n Email: " +   email.value + "\n Gender: " 
-            + gender.value + "\n Service: " + joinValues + "\n Genre: " + genre.value);
-        }   
-</script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
