@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+            <li><a href="index.html">HOME</a> </li>
+            <li><a href="mailto:anjelavenice.rivera@gmail.com">MAIL TO</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="Lesson1.html">LESSON 1</a></li>
+            <li><a href="lesson2.html">LESSON 2</a></li>
+            <li><a href="Schedule.html">SCHEDULE</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="Multimedia.html">MULTIMEDIA</a></li>
+            <li><a href="resume2.html">RESUME</a></li>
+        </ul>
+    <section class="bg-red fc-white">
+    <form action="" method="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username" maxlength="20"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" name="password" id="password" maxlength="20">
+        <br><br>
+        <input type="button" name="login" id="login" value="Submit" onclick="validate()">
+        <!--<button name="login" id="login">Submit</button>-->
+    </form>
+</section>
+
+    <section class="bg-red fc-white">
+        <form action="">
+            <h1>Registration</h1>
+            <label for="">Fullname:</label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Fullname"><br>
+            <label for="">E-mail</label><br>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <br><br>
+            <label for="">Gender</label><br>
+            <input type="radio" name="gender" id="gender" value="male" checked>Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <br><br>
+            <label for="">Music Services</label><br>
+            <input type="checkbox" name="service" id="service" value="Spotify" checked> Spotify
+            <input type="checkbox" name="service" id="service" value="Apple" checked> Apple
+            <input type="checkbox" name="service" id="service" value="Itunes" checked> Itunes
+            <br><br>
+            <label for="">Genre</label><br>
+            <select name="Genre" id="Genre">
+                <option value="">--Select Genre--</option>
+                <option value="Kpop">Kpop</option>
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+            <br><br>
+            <input type="button" name="Registration" id="Registration" value="Submit" onclick="registration()">
+        </form>
+    </section>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61777.358834821!2d120.93539714813232!3d14.594236327274983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca16780c9ebd%3A0xcd430ec6788bb043!2sFort%20Santiago!5e0!3m2!1sen!2sph!4v1757328534253!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<li><a href="index.html">index</a> </li>
+</html>
+
+<script>
+    function validate(){
+        var username = document.getElementById('username');
+        var password = document.getElementById('password');
+
+        if(username.value === 'anjela' && password.value === 'venice'){
+        alert("Welcome! \n Username: " + username.value + " \n Password: " + password.value);
+        window.location.href='home.html';
+    } else {
+        alert("Invalid username and password! Please try again");
+        }
+    }
+        function registration(){
+            var fullname = document.getElementById("fullname");
+            var email = document.getElementById("email");
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var service = document.querySelectorAll('input[type="checkbox"]:checked');
+            var genre = document.querySelector('select[name="Genre"]');
+            const checkedValues = Array.from(service).map(checkbox => checkbox.value);
+            const joinValues = checkedValues.join(", ");
+
+            alert("Information: \n Fullname: " + fullname.value + "\n Email: " +   email.value + "\n Gender: " 
+            + gender.value + "\n Service: " + joinValues + "\n Genre: " + genre.value);
+        }   
+</script>
